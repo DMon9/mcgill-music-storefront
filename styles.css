@@ -215,6 +215,7 @@ h2 {
 .license-line {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 12px;
   padding-top: 10px;
   border-top: 1px solid var(--line);
@@ -222,6 +223,14 @@ h2 {
 
 .license-line strong {
   color: var(--text);
+}
+
+.license-detail {
+  margin: 6px 0 0;
+  max-width: 28ch;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--muted);
 }
 
 .paypal-shell {

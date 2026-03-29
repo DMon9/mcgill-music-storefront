@@ -10,9 +10,9 @@ const products = [
       "Dark trap with heavy 808s, tension, and a clean cinematic drop.",
     listenUrl: "https://www.youtube.com/watch?v=lUyZZvRIj0Q",
     licenses: [
-      { name: "Basic lease", price: "29.99" },
-      { name: "Premium lease", price: "79.99" },
-      { name: "Unlimited lease", price: "149.99" },
+      { name: "Basic lease", price: "29.99", detail: "Starter use for singles, demos, and early releases." },
+      { name: "Premium lease", price: "79.99", detail: "Stronger release option with more room to push the track." },
+      { name: "Unlimited lease", price: "149.99", detail: "Best fit for wide release, monetization, and repeat use." },
     ],
   },
   {
@@ -21,11 +21,11 @@ const products = [
     subtitle: "Melodic trap beat",
     description:
       "Melodic trap with space, bounce, and a cleaner late-night feel.",
-    listenUrl: "https://www.youtube.com/watch?v=lUyZZvRIj0Q",
+    listenUrl: "https://www.youtube.com/watch?v=eCNqLNudxTw",
     licenses: [
-      { name: "Basic lease", price: "24.99" },
-      { name: "Premium lease", price: "69.99" },
-      { name: "Unlimited lease", price: "129.99" },
+      { name: "Basic lease", price: "24.99", detail: "Starter use for singles, demos, and early releases." },
+      { name: "Premium lease", price: "69.99", detail: "Stronger release option with more room to push the track." },
+      { name: "Unlimited lease", price: "129.99", detail: "Best fit for wide release, monetization, and repeat use." },
     ],
   },
 ];
@@ -58,7 +58,13 @@ function renderCatalog() {
     for (const license of product.licenses) {
       const line = document.createElement("div");
       line.className = "license-line";
-      line.innerHTML = `<span>${license.name}</span><strong>$${license.price}</strong>`;
+      line.innerHTML = `
+        <div>
+          <span>${license.name}</span>
+          <p class="license-detail">${license.detail}</p>
+        </div>
+        <strong>$${license.price}</strong>
+      `;
       pricing.appendChild(line);
     }
 
