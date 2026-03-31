@@ -212,6 +212,27 @@ h2 {
   margin: 16px 0 18px;
 }
 
+.license-selector-wrap {
+  display: grid;
+  gap: 10px;
+  margin: 8px 0 14px;
+}
+
+.license-select {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  font: inherit;
+}
+
+.license-select:focus {
+  outline: 1px solid rgba(240, 80, 66, 0.7);
+  border-color: rgba(240, 80, 66, 0.7);
+}
+
 .license-line {
   display: flex;
   justify-content: space-between;
@@ -245,6 +266,13 @@ h2 {
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.5;
+}
+
+.fulfillment-note {
+  margin: 0 0 14px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--muted);
 }
 
 code {
