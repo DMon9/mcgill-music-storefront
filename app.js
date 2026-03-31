@@ -3,6 +3,34 @@ const CURRENCY = "USD";
 
 const products = [
   {
+    slug: "slideeee",
+    title: "SLIDEEEE",
+    subtitle: "Melodic trap beat",
+    description:
+      "Slide-heavy melodic trap with smooth bounce, roomy space, and a clean late-night pocket.",
+    actionUrl: "assets/audio/slideeee-preview.mp3",
+    actionLabel: "Preview audio",
+    fulfillmentNote:
+      "Beat files and license delivery are handled manually right after payment.",
+    licenses: [
+      {
+        name: "Basic lease",
+        price: "29.99",
+        detail: "Starter release license for singles, demos, and first drops.",
+      },
+      {
+        name: "Premium lease",
+        price: "79.99",
+        detail: "Best choice for stronger rollout plans and wider release use.",
+      },
+      {
+        name: "Unlimited lease",
+        price: "149.99",
+        detail: "Built for full monetization, bigger pushes, and repeat use.",
+      },
+    ],
+  },
+  {
     slug: "night-pressure",
     title: "Night Pressure",
     subtitle: "Travis Scott x Future type beat",
