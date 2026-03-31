@@ -8,8 +8,8 @@ const products = [
     subtitle: "Melodic trap beat",
     description:
       "Slide-heavy melodic trap with smooth bounce, roomy space, and a clean late-night pocket.",
-    actionUrl: "assets/audio/slideeee-preview.mp3",
-    actionLabel: "Preview audio",
+    actionUrl: "https://www.youtube.com/watch?v=VcjFNAz0LFo",
+    actionLabel: "Listen on YouTube",
     fulfillmentNote:
       "Beat files and license delivery are handled manually right after payment.",
     licenses: [
