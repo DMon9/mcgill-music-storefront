@@ -3,6 +3,34 @@ const CURRENCY = "USD";
 
 const products = [
   {
+    slug: "betterthan",
+    title: "BETTERTHAN",
+    subtitle: "Female vocal trap beat",
+    description:
+      "Dark female-vocal trap bounce with chopped topline texture, nastier drums, and a sharper late-night pocket.",
+    actionUrl: "https://www.youtube.com/watch?v=_njn6YL4BNc",
+    actionLabel: "Listen on YouTube",
+    fulfillmentNote:
+      "Beat files and license delivery are handled manually right after payment.",
+    licenses: [
+      {
+        name: "Basic lease",
+        price: "29.99",
+        detail: "Starter release license for singles, demos, and first drops.",
+      },
+      {
+        name: "Premium lease",
+        price: "79.99",
+        detail: "Best choice for stronger rollout plans and wider release use.",
+      },
+      {
+        name: "Unlimited lease",
+        price: "149.99",
+        detail: "Built for full monetization, bigger pushes, and repeat use.",
+      },
+    ],
+  },
+  {
     slug: "slideeee",
     title: "SLIDEEEE",
     subtitle: "Melodic trap beat",
