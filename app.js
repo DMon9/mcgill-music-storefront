@@ -3,6 +3,34 @@ const CURRENCY = "USD";
 
 const products = [
   {
+    slug: "redline",
+    title: "REDLINE",
+    subtitle: "Dark melodic trap beat",
+    description:
+      "Dark melodic trap with long-breath tension, wider synth haze, and a cleaner late-night payoff. Preview pulled from the current April 5 bounce.",
+    actionUrl: "https://www.youtube.com/watch?v=zt3vUZD9PN0",
+    actionLabel: "Listen on YouTube",
+    fulfillmentNote:
+      "Beat files and license delivery are handled manually right after payment.",
+    licenses: [
+      {
+        name: "Basic lease",
+        price: "29.99",
+        detail: "Starter release license for singles, demos, and first drops.",
+      },
+      {
+        name: "Premium lease",
+        price: "79.99",
+        detail: "Best choice for stronger rollout plans and wider release use.",
+      },
+      {
+        name: "Unlimited lease",
+        price: "149.99",
+        detail: "Built for full monetization, bigger pushes, and repeat use.",
+      },
+    ],
+  },
+  {
     slug: "betterthan",
     title: "BETTERTHAN",
     subtitle: "Female vocal trap beat",
