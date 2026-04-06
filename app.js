@@ -265,6 +265,7 @@ function renderCatalog() {
 
     const card = document.createElement("article");
     card.className = "product-card";
+    card.id = `product-${product.slug}`;
     if (featured) {
       card.classList.add("product-card-featured");
     }

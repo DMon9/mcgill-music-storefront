@@ -295,6 +295,36 @@ h2 {
   margin-top: 34px;
 }
 
+.spotlight-panel {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 20px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background:
+    radial-gradient(circle at 78% 18%, rgba(255, 120, 74, 0.16), transparent 26%),
+    linear-gradient(180deg, rgba(16, 14, 16, 0.96), rgba(10, 10, 12, 0.98));
+  box-shadow: var(--shadow);
+}
+
+.spotlight-copy h2 {
+  font-size: clamp(2.6rem, 5vw, 4.6rem);
+  line-height: 0.92;
+}
+
+.spotlight-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.spotlight-meta {
+  display: grid;
+  gap: 14px;
+}
+
 .section-heading {
   margin-bottom: 22px;
 }
@@ -517,6 +547,7 @@ code {
 @media (max-width: 920px) {
   .topbar,
   .section-heading-split,
+  .spotlight-panel,
   .hero {
     grid-template-columns: 1fr;
   }
