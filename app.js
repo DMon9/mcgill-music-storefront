@@ -3,6 +3,34 @@ const CURRENCY = "USD";
 
 const products = [
   {
+    slug: "813",
+    title: "813",
+    subtitle: "Dark melodic trap beat",
+    description:
+      "Dark melodic trap with ghost-lead tension, analog bass weight, and colder synth pressure.",
+    actionUrl: "https://www.youtube.com/watch?v=lekwGgFKxww",
+    actionLabel: "Listen on YouTube",
+    fulfillmentNote:
+      "Beat files and license delivery are handled manually right after payment.",
+    licenses: [
+      {
+        name: "Basic lease",
+        price: "29.99",
+        detail: "Starter release license for singles, demos, and first drops.",
+      },
+      {
+        name: "Premium lease",
+        price: "79.99",
+        detail: "Best choice for stronger rollout plans and wider release use.",
+      },
+      {
+        name: "Unlimited lease",
+        price: "149.99",
+        detail: "Built for full monetization, bigger pushes, and repeat use.",
+      },
+    ],
+  },
+  {
     slug: "red-roof",
     title: "RED ROOF",
     subtitle: "Dark melodic trap beat",
