@@ -102,7 +102,6 @@ body {
 }
 
 .hero-copy,
-.hero-panel,
 .product-card {
   border: 1px solid var(--line);
   background: var(--panel);
@@ -119,16 +118,6 @@ body {
     radial-gradient(circle at 85% 18%, rgba(255, 124, 78, 0.16), transparent 23%),
     radial-gradient(circle at 80% 72%, rgba(255, 198, 103, 0.08), transparent 28%),
     linear-gradient(180deg, rgba(18, 17, 20, 0.94), rgba(11, 11, 14, 0.98));
-}
-
-.hero-panel {
-  padding: 28px;
-  border-radius: var(--radius-xl);
-  display: grid;
-  gap: 14px;
-  align-content: center;
-  background:
-    linear-gradient(180deg, rgba(29, 15, 15, 0.98), rgba(15, 15, 17, 0.96));
 }
 
 .eyebrow {
@@ -163,7 +152,6 @@ h2 {
 .meta-copy,
 .product-copy,
 .license-line,
-.hero-stat-label,
 .section-copy,
 .product-meta-row {
   color: var(--muted);
@@ -272,25 +260,6 @@ h2 {
   transform: translateY(-2px);
 }
 
-.hero-stat {
-  padding: 16px 18px;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.hero-stat strong {
-  display: block;
-  margin-top: 6px;
-  font-size: 1.15rem;
-}
-
-.hero-stat-accent {
-  background:
-    linear-gradient(145deg, rgba(255, 121, 67, 0.14), rgba(255, 255, 255, 0.03));
-  border-color: rgba(255, 159, 106, 0.18);
-}
-
 .section {
   margin-top: 34px;
 }
@@ -318,11 +287,6 @@ h2 {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 24px;
-}
-
-.spotlight-meta {
-  display: grid;
-  gap: 14px;
 }
 
 .section-heading {
@@ -553,7 +517,7 @@ code {
   }
 
   .hero-copy,
-  .hero-panel {
+  .spotlight-panel {
     padding: 28px;
   }
 
@@ -587,7 +551,6 @@ code {
   }
 
   .hero-copy,
-  .hero-panel,
   .product-card {
     border-radius: 24px;
   }
