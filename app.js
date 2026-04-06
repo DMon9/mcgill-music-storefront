@@ -248,25 +248,62 @@ const products = [
 
 function renderCatalog() {
   const grid = document.getElementById("catalog-grid");
+  const accentPairs = [
+    ["rgba(255, 88, 72, 0.42)", "rgba(255, 196, 110, 0.18)"],
+    ["rgba(209, 72, 119, 0.34)", "rgba(113, 98, 255, 0.2)"],
+    ["rgba(83, 149, 255, 0.34)", "rgba(109, 240, 204, 0.16)"],
+    ["rgba(255, 146, 82, 0.32)", "rgba(255, 82, 82, 0.14)"],
+  ];
 
-  for (const product of products) {
+  products.forEach((product, index) => {
+    const [glowA, glowB] = accentPairs[index % accentPairs.length];
+    const featured = index === 0;
+    const book = product.slug === "business-of-hustle";
+    const lowestPrice = product.licenses
+      .map((license) => Number.parseFloat(license.price))
+      .reduce((min, price) => Math.min(min, price), Number.POSITIVE_INFINITY);
+
     const card = document.createElement("article");
     card.className = "product-card";
+    if (featured) {
+      card.classList.add("product-card-featured");
+    }
+    if (book) {
+      card.classList.add("product-card-book");
+    }
+    card.style.setProperty("--card-glow-a", glowA);
+    card.style.setProperty("--card-glow-b", glowB);
 
     const visual = document.createElement("div");
     visual.className = "product-visual";
-    visual.innerHTML = `<div><p class="meta-copy">${product.subtitle}</p><h3>${product.title}</h3></div>`;
+    visual.innerHTML = `
+      <div class="product-visual-top">
+        <span class="product-chip">${featured ? "Featured release" : book ? "Digital edition" : "Beat license"}</span>
+        <span class="product-price-chip">From $${lowestPrice.toFixed(2)}</span>
+      </div>
+      <div>
+        <p class="meta-copy">${product.subtitle}</p>
+        <h3>${product.title}</h3>
+      </div>
+    `;
 
     const body = document.createElement("div");
     body.className = "product-body";
+
+    const metaRow = document.createElement("div");
+    metaRow.className = "product-meta-row";
+    metaRow.innerHTML = `
+      <span>${product.licenses.length} ${product.licenses.length === 1 ? "tier" : "tiers"}</span>
+      <span>${book ? "Direct ownership" : "Instant license lane"}</span>
+    `;
 
     const copy = document.createElement("p");
     copy.className = "product-copy";
     copy.textContent = product.description;
 
     const action = document.createElement("p");
-    action.className = "product-copy";
-    action.innerHTML = `<a class="ghost-link" href="${product.actionUrl}" target="_blank" rel="noreferrer">${product.actionLabel}</a>`;
+    action.className = "product-action-row";
+    action.innerHTML = `<a class="secondary-link" href="${product.actionUrl}" target="_blank" rel="noreferrer">${product.actionLabel}</a>`;
 
     const pricing = document.createElement("div");
     pricing.className = "pricing-block";
@@ -311,10 +348,10 @@ function renderCatalog() {
       <div id="paypal-buttons-${product.slug}"></div>
     `;
 
-    body.append(copy, action, pricing, selectorWrap, fulfillment, paypalShell);
+    body.append(metaRow, copy, action, pricing, selectorWrap, fulfillment, paypalShell);
     card.append(visual, body);
     grid.appendChild(card);
-  }
+  });
 }
 
 function getSelectedLicense(product) {
