@@ -3,6 +3,62 @@ const CURRENCY = "USD";
 
 const products = [
   {
+    slug: "210-on-the-hill-pt-1",
+    title: "210 ON THE HILL PT. 1",
+    subtitle: "Dark uphill trap beat",
+    description:
+      "Dark uphill trap pressure with a colder road feel, hard low-end weight, and a cleaner late-night edge.",
+    actionUrl: "assets/audio/210-on-the-hill-pt-1-preview.mp3",
+    actionLabel: "Preview audio",
+    fulfillmentNote:
+      "Beat files and license delivery are handled manually right after payment.",
+    licenses: [
+      {
+        name: "Basic lease",
+        price: "29.99",
+        detail: "Starter release license for singles, demos, and first drops.",
+      },
+      {
+        name: "Premium lease",
+        price: "79.99",
+        detail: "Best choice for stronger rollout plans and wider release use.",
+      },
+      {
+        name: "Unlimited lease",
+        price: "149.99",
+        detail: "Built for full monetization, bigger pushes, and repeat use.",
+      },
+    ],
+  },
+  {
+    slug: "210-on-the-hill-pt-2",
+    title: "210 ON THE HILL PT. 2",
+    subtitle: "Dark uphill trap beat",
+    description:
+      "Second part of the 210 uphill lane with longer pressure, darker stretch, and a heavier full-length payoff.",
+    actionUrl: "assets/audio/210-on-the-hill-pt-2-preview.mp3",
+    actionLabel: "Preview audio",
+    fulfillmentNote:
+      "Beat files and license delivery are handled manually right after payment.",
+    licenses: [
+      {
+        name: "Basic lease",
+        price: "29.99",
+        detail: "Starter release license for singles, demos, and first drops.",
+      },
+      {
+        name: "Premium lease",
+        price: "79.99",
+        detail: "Best choice for stronger rollout plans and wider release use.",
+      },
+      {
+        name: "Unlimited lease",
+        price: "149.99",
+        detail: "Built for full monetization, bigger pushes, and repeat use.",
+      },
+    ],
+  },
+  {
     slug: "813",
     title: "813",
     subtitle: "Dark melodic trap beat",
