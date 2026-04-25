@@ -3,6 +3,34 @@ const CURRENCY = "USD";
 
 const products = [
   {
+    slug: "oz-for-the-bounce",
+    title: "OZ FOR THE BOUNCE",
+    subtitle: "Dark bounce trap beat",
+    description:
+      "Dark bounce trap pressure with a harder pocket, heavier low-end push, and a colder late-night swing.",
+    actionUrl: "assets/audio/oz-for-the-bounce-preview.mp3",
+    actionLabel: "Preview audio",
+    fulfillmentNote:
+      "Beat files and license delivery are handled manually right after payment.",
+    licenses: [
+      {
+        name: "Basic lease",
+        price: "29.99",
+        detail: "Starter release license for singles, demos, and first drops.",
+      },
+      {
+        name: "Premium lease",
+        price: "79.99",
+        detail: "Best choice for stronger rollout plans and wider release use.",
+      },
+      {
+        name: "Unlimited lease",
+        price: "149.99",
+        detail: "Built for full monetization, bigger pushes, and repeat use.",
+      },
+    ],
+  },
+  {
     slug: "210-on-the-hill-pt-1",
     title: "210 ON THE HILL PT. 1",
     subtitle: "Dark uphill trap beat",
