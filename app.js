@@ -10,6 +10,8 @@ const products = [
       "Heartbreak melodic trap with polished low-end pressure, late-night vocal space, and a clean direct-license lane for the newest McGill drop.",
     actionUrl: "assets/audio/lie-2-luv-preview.mp3",
     actionLabel: "Preview audio",
+    youtubeUrl: "https://youtu.be/5CpGpBoDGGA",
+    youtubeLabel: "Watch on YouTube",
     fulfillmentNote:
       "Final song files and license delivery are handled manually right after payment.",
     licenses: [
@@ -473,7 +475,14 @@ function renderCatalog() {
     const action = document.createElement("p");
     action.className = "product-action-row";
     const externalAction = !product.actionUrl.startsWith("#");
-    action.innerHTML = `<a class="secondary-link" href="${product.actionUrl}"${externalAction ? ' target="_blank" rel="noreferrer"' : ""}>${product.actionLabel}</a>`;
+    action.innerHTML = `
+      <a class="secondary-link" href="${product.actionUrl}"${externalAction ? ' target="_blank" rel="noreferrer"' : ""}>${product.actionLabel}</a>
+      ${
+        product.youtubeUrl
+          ? `<a class="secondary-link" href="${product.youtubeUrl}" target="_blank" rel="noreferrer">${product.youtubeLabel ?? "Watch on YouTube"}</a>`
+          : ""
+      }
+    `;
 
     const pricing = document.createElement("div");
     pricing.className = "pricing-block";
