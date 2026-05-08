@@ -3,6 +3,34 @@ const CURRENCY = "USD";
 
 const products = [
   {
+    slug: "lie-2-luv",
+    title: "LIE 2 LUV",
+    subtitle: "Newest dark melodic release",
+    description:
+      "Heartbreak melodic trap with polished low-end pressure, late-night vocal space, and a clean direct-license lane for the newest McGill drop.",
+    actionUrl: "assets/audio/lie-2-luv-preview.mp3",
+    actionLabel: "Preview audio",
+    fulfillmentNote:
+      "Final song files and license delivery are handled manually right after payment.",
+    licenses: [
+      {
+        name: "Basic lease",
+        price: "29.99",
+        detail: "Starter release license for singles, demos, and first drops.",
+      },
+      {
+        name: "Premium lease",
+        price: "79.99",
+        detail: "Best choice for stronger rollout plans and wider release use.",
+      },
+      {
+        name: "Unlimited lease",
+        price: "149.99",
+        detail: "Built for full monetization, bigger pushes, and repeat use.",
+      },
+    ],
+  },
+  {
     slug: "oz-for-the-bounce",
     title: "OZ FOR THE BOUNCE",
     subtitle: "Dark bounce trap beat",
@@ -444,7 +472,8 @@ function renderCatalog() {
 
     const action = document.createElement("p");
     action.className = "product-action-row";
-    action.innerHTML = `<a class="secondary-link" href="${product.actionUrl}" target="_blank" rel="noreferrer">${product.actionLabel}</a>`;
+    const externalAction = !product.actionUrl.startsWith("#");
+    action.innerHTML = `<a class="secondary-link" href="${product.actionUrl}"${externalAction ? ' target="_blank" rel="noreferrer"' : ""}>${product.actionLabel}</a>`;
 
     const pricing = document.createElement("div");
     pricing.className = "pricing-block";
