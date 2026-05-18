@@ -3,6 +3,34 @@ const CURRENCY = "USD";
 
 const products = [
   {
+    slug: "clear-tears",
+    title: "CLEAR TEARS",
+    subtitle: "Newest warm melodic release",
+    description:
+      "Warm melodic trap with glossy late-night emotion, clean low-end space, and a direct-license lane for the newest McGill drop.",
+    actionUrl: "assets/audio/clear-tears-preview.mp3",
+    actionLabel: "Preview audio",
+    fulfillmentNote:
+      "Final song files and license delivery are handled manually right after payment.",
+    licenses: [
+      {
+        name: "Basic lease",
+        price: "29.99",
+        detail: "Starter release license for singles, demos, and first drops.",
+      },
+      {
+        name: "Premium lease",
+        price: "79.99",
+        detail: "Best choice for stronger rollout plans and wider release use.",
+      },
+      {
+        name: "Unlimited lease",
+        price: "149.99",
+        detail: "Built for full monetization, bigger pushes, and repeat use.",
+      },
+    ],
+  },
+  {
     slug: "lie-2-luv",
     title: "LIE 2 LUV",
     subtitle: "Newest dark melodic release",
