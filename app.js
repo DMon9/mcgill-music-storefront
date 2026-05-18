@@ -7,7 +7,7 @@ const products = [
     title: "CLEAR TEARS",
     subtitle: "Newest warm melodic release",
     description:
-      "Warm melodic trap with glossy late-night emotion, clean low-end space, and a direct-license lane for the newest McGill drop.",
+      "Warm melodic trap with glossy late-night emotion, clean low-end space, and a direct-license lane for the newest Palmetto P release.",
     actionUrl: "assets/audio/clear-tears-preview.mp3",
     actionLabel: "Preview audio",
     fulfillmentNote:
