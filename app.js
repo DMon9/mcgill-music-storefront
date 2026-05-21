@@ -10,6 +10,8 @@ const products = [
       "Dark melodic release from Palmetto P with BabyKEEKS, built for the newest storefront drop and direct-license lane.",
     actionUrl: "assets/audio/introxcantfixabitch-preview.mp3",
     actionLabel: "Preview audio",
+    youtubeUrl: "https://youtu.be/4XwThdnFcno",
+    youtubeLabel: "Watch on YouTube",
     fulfillmentNote:
       "Final song files and license delivery are handled manually right after payment.",
     licenses: [
