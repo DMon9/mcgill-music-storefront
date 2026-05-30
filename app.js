@@ -32,6 +32,64 @@ const products = [
     ],
   },
   {
+    slug: "i-know-you-see-me-calling-sped-up",
+    title: "I KNOW YOU SEE ME CALLING (SPED UP)",
+    subtitle: "Palmetto P sped up version",
+    description:
+      "The sped up version of Palmetto P - I KNOW YOU SEE ME CALLING, built for short-form replay, faster movement, and higher-energy edits.",
+    imageUrl: "assets/images/i-know-you-see-me-calling-sped-up-cover.png",
+    actionUrl: "assets/audio/i-know-you-see-me-calling-sped-up.mp3",
+    actionLabel: "Preview audio",
+    fulfillmentNote:
+      "Final sped up song file delivery is handled manually right after payment.",
+    licenses: [
+      {
+        name: "Digital song",
+        price: "4.99",
+        detail: "Personal download of the official sped up Palmetto P version.",
+      },
+      {
+        name: "Supporter edition",
+        price: "9.99",
+        detail: "Direct support tier with the same sped up audio delivery.",
+      },
+      {
+        name: "Commercial inquiry deposit",
+        price: "29.99",
+        detail: "Deposit toward commercial use, sync, or licensing discussion.",
+      },
+    ],
+  },
+  {
+    slug: "i-know-you-see-me-calling-slowed",
+    title: "I KNOW YOU SEE ME CALLING (SLOWED)",
+    subtitle: "Palmetto P slowed version",
+    description:
+      "The slowed version of Palmetto P - I KNOW YOU SEE ME CALLING, stretched into a darker, smoother, late-night replay lane.",
+    imageUrl: "assets/images/i-know-you-see-me-calling-slowed-cover.png",
+    actionUrl: "assets/audio/i-know-you-see-me-calling-slowed.mp3",
+    actionLabel: "Preview audio",
+    fulfillmentNote:
+      "Final slowed song file delivery is handled manually right after payment.",
+    licenses: [
+      {
+        name: "Digital song",
+        price: "4.99",
+        detail: "Personal download of the official slowed Palmetto P version.",
+      },
+      {
+        name: "Supporter edition",
+        price: "9.99",
+        detail: "Direct support tier with the same slowed audio delivery.",
+      },
+      {
+        name: "Commercial inquiry deposit",
+        price: "29.99",
+        detail: "Deposit toward commercial use, sync, or licensing discussion.",
+      },
+    ],
+  },
+  {
     slug: "introxcantfixabitch",
     title: "INTROxCANTFIXABITCH",
     subtitle: "Newest release feat. BabyKEEKS",
