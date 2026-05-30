@@ -3,6 +3,35 @@ const CURRENCY = "USD";
 
 const products = [
   {
+    slug: "i-know-you-see-me-calling",
+    title: "I KNOW YOU SEE ME CALLING",
+    subtitle: "Palmetto P official release",
+    description:
+      "A raw late-night Palmetto P release with a direct vocal pull, smooth pressure, and replay-focused hook energy.",
+    imageUrl: "assets/images/i-know-you-see-me-calling-cover.png",
+    actionUrl: "assets/audio/i-know-you-see-me-calling.mp3",
+    actionLabel: "Preview audio",
+    fulfillmentNote:
+      "Final song file delivery is handled manually right after payment.",
+    licenses: [
+      {
+        name: "Digital song",
+        price: "4.99",
+        detail: "Personal download of the official Palmetto P release.",
+      },
+      {
+        name: "Supporter edition",
+        price: "9.99",
+        detail: "Direct support tier with the same official audio delivery.",
+      },
+      {
+        name: "Commercial inquiry deposit",
+        price: "29.99",
+        detail: "Deposit toward commercial use, sync, or licensing discussion.",
+      },
+    ],
+  },
+  {
     slug: "introxcantfixabitch",
     title: "INTROxCANTFIXABITCH",
     subtitle: "Newest release feat. BabyKEEKS",
@@ -65,7 +94,7 @@ const products = [
     title: "LIE 2 LUV",
     subtitle: "Newest dark melodic release",
     description:
-      "Heartbreak melodic trap with polished low-end pressure, late-night vocal space, and a clean direct-license lane for the newest McGill drop.",
+      "Heartbreak melodic trap with polished low-end pressure, late-night vocal space, and a clean direct-license lane for direct checkout.",
     actionUrl: "assets/audio/lie-2-luv-preview.mp3",
     actionLabel: "Preview audio",
     youtubeUrl: "https://youtu.be/5CpGpBoDGGA",
@@ -505,11 +534,15 @@ function renderCatalog() {
 
     const visual = document.createElement("div");
     visual.className = "product-visual";
+    if (product.imageUrl) {
+      visual.classList.add("product-visual-cover");
+    }
     visual.innerHTML = `
       <div class="product-visual-top">
         <span class="product-chip">${featured ? "Featured release" : book ? "Digital edition" : "Beat license"}</span>
         <span class="product-price-chip">From $${lowestPrice.toFixed(2)}</span>
       </div>
+      ${product.imageUrl ? `<img class="product-cover" src="${product.imageUrl}" alt="${product.title} cover art">` : ""}
       <div>
         <p class="meta-copy">${product.subtitle}</p>
         <h3>${product.title}</h3>
