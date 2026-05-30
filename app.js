@@ -11,6 +11,8 @@ const products = [
     imageUrl: "assets/images/i-know-you-see-me-calling-cover.png",
     actionUrl: "assets/audio/i-know-you-see-me-calling.mp3",
     actionLabel: "Preview audio",
+    youtubeUrl: "https://www.youtube.com/watch?v=IHdl7y_dvDs",
+    youtubeLabel: "Watch on YouTube",
     fulfillmentNote:
       "Final song file delivery is handled manually right after payment.",
     licenses: [
@@ -40,6 +42,8 @@ const products = [
     imageUrl: "assets/images/i-know-you-see-me-calling-sped-up-cover.png",
     actionUrl: "assets/audio/i-know-you-see-me-calling-sped-up.mp3",
     actionLabel: "Preview audio",
+    youtubeUrl: "https://www.youtube.com/watch?v=gMuVWFgA3r4",
+    youtubeLabel: "Watch on YouTube",
     fulfillmentNote:
       "Final sped up song file delivery is handled manually right after payment.",
     licenses: [
@@ -69,6 +73,8 @@ const products = [
     imageUrl: "assets/images/i-know-you-see-me-calling-slowed-cover.png",
     actionUrl: "assets/audio/i-know-you-see-me-calling-slowed.mp3",
     actionLabel: "Preview audio",
+    youtubeUrl: "https://www.youtube.com/watch?v=JdO7HNfK9KY",
+    youtubeLabel: "Watch on YouTube",
     fulfillmentNote:
       "Final slowed song file delivery is handled manually right after payment.",
     licenses: [
