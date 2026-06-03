@@ -11,7 +11,7 @@ const products = [
     imageUrl: "assets/images/can-you-hear-me-cover.png",
     actionUrl: "assets/audio/can-you-hear-me.mp3",
     actionLabel: "Preview audio",
-    youtubeUrl: "https://www.youtube.com/watch?v=cVyJadN5EJA",
+    youtubeUrl: "https://www.youtube.com/watch?v=fMyBGyM0Zwk",
     youtubeLabel: "Watch on YouTube",
     fulfillmentNote:
       "Beat files and license delivery are handled manually right after payment.",
