@@ -3,6 +3,37 @@ const CURRENCY = "USD";
 
 const products = [
   {
+    slug: "can-you-hear-me",
+    title: "CAN YOU HEAR ME",
+    subtitle: "Palmetto P official beat",
+    description:
+      "A hard Palmetto P beat with raw drums, smooth pressure, and a direct license lane for artists ready to cut records.",
+    imageUrl: "assets/images/can-you-hear-me-cover.png",
+    actionUrl: "assets/audio/can-you-hear-me.mp3",
+    actionLabel: "Preview audio",
+    youtubeUrl: "https://www.youtube.com/watch?v=cVyJadN5EJA",
+    youtubeLabel: "Watch on YouTube",
+    fulfillmentNote:
+      "Beat files and license delivery are handled manually right after payment.",
+    licenses: [
+      {
+        name: "Basic lease",
+        price: "29.99",
+        detail: "Starter release license for singles, demos, and first drops.",
+      },
+      {
+        name: "Premium lease",
+        price: "79.99",
+        detail: "Best choice for stronger rollout plans and wider release use.",
+      },
+      {
+        name: "Unlimited lease",
+        price: "149.99",
+        detail: "Built for full monetization, bigger pushes, and repeat use.",
+      },
+    ],
+  },
+  {
     slug: "i-know-you-see-me-calling",
     title: "I KNOW YOU SEE ME CALLING",
     subtitle: "Palmetto P official release",
